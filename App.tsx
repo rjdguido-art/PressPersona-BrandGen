@@ -6,9 +6,9 @@ import { Sparkles, PenTool, Loader2, ArrowRight, LayoutGrid } from 'lucide-react
 
 const App: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
-    companyName: 'PressPersona',
-    description: 'A modern digital PR and brand identity agency helping tech startups find their voice.',
-    industry: 'Public Relations & Branding'
+    companyName: '',
+    description: '',
+    industry: ''
   });
 
   const [concepts, setConcepts] = useState<LogoConcept[]>([]);
@@ -179,7 +179,7 @@ const App: React.FC = () => {
                     <div className="w-16 h-16 border-4 border-indigo-600 rounded-full border-t-transparent animate-spin absolute top-0 left-0"></div>
                   </div>
                   <h3 className="text-xl font-semibold text-slate-800 mt-6 mb-2">Analyzing Brand Identity...</h3>
-                  <p className="text-slate-500 max-w-sm">Gemini is brainstorming concepts for "{formData.companyName}" based on your description.</p>
+                  <p className="text-slate-500 max-w-sm">Persona is brainstorming fresh concepts based on your description.</p>
                </div>
             )}
 
